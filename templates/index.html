@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Abyssia | Group 24 Underwater Analysis Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <button class="theme-toggle" id="themeToggle">
+        <span class="theme-toggle-icon">🌊</span>
+        <span id="themeText">Dark Mode</span>
+    </button>
+
+<div class="wave-bg"></div>
+<div class="container">
+    <div class="header">
+        <h1>
+        🌊 Abyssia
+        </h1>
+        <div class="subhead">EGN4952C Group 24: Austin Pritchard, Dominique Rivera, Luis Rodriguez, Renna Ozar, and Yumin Jang</div>
+    </div>
+
+    <div class="dashboard">
+        <div class="upload-card">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">🐠</div>
+                <div class="upload-text">Drag & drop or click to upload</div>
+                <div class="file-hint">JPEG, PNG, JPG (max 20MB)</div>
+                <input type="file" id="fileInput" accept="image/jpeg, image/png, image/jpg">
+            </div>
+
+            <div id="previewWrapper" class="preview-container" style="display: none;">
+                <img id="previewImage" class="preview-img" alt="Preview">
+            </div>
+
+            <button id="analyzeBtn" class="btn-analyze" disabled>
+                <span>🔍</span> Analyze Underwater Scene
+            </button>
+            <div id="uploadError" class="error-message" style="display: none;"></div>
+        </div>
+
+        <div class="results-card">
+            <div id="resultsArea">
+                <div style="text-align: center; padding: 2rem 0.5rem; color: #4d8d9c;">
+                    <span style="font-size: 2rem;">🐙</span>
+                    <p style="margin-top: 0.75rem;">Upload an underwater image<br>to see AI caption & classification</p>
+                    <p style="font-size: 0.8rem; margin-top: 0.5rem; color: #6c9aa8;">🌊 Our AI generate you a caption analysing the image, as well as classifications for underwater images</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-note">
+        ⚡ Powered by CLIP zero-shot + Qwen2.5-VL-3B | Real-time marine analysis <br> Backend: Austin Pritchard <br> Frontend: Renna Ozar <br> Model Implementation: Dominique Rivera, Luis Rodriguez, Yumin Jang
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
