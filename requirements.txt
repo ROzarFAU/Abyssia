@@ -4,4 +4,5 @@ torch
 onnxruntime
 transformers
 torchvision
+gunicorn
 numpy
