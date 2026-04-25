@@ -3,7 +3,7 @@
 
 Abyssia is a vision-language model website dedicated to real-time Marine Analysis, upload any underwater image to generate an AI Caption to accurately describe the scene depicted in the image as well as create a classification of the image based on set labels to identify what exactly is shown in the image. Additionally, you can upload an image thats not necessarily an underwater image to still generate a set of captions, although in this scenario the app will fail to create classifications for the image in question.
 
-https://github.com/ROzarFAU/Abyssia/blame/9d3dc678078ceacf5fd6b94adbd89251626f61ee/Abyssia%20Promo.mp4
+https://github.com/ROzarFAU/Abyssia/blob/324a9dcab10890fcdd2a330c3ae70a04dbb5edcd/Abyssia%20Promo.gif
 
 ## Development
 To set up a local development environment, follow these steps:
