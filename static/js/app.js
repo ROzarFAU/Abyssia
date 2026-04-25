@@ -1,3 +1,6 @@
+"""
+    Renna Ozar
+"""
 // DOM Elements
 const fileInput = document.getElementById('fileInput');
 const uploadArea = document.getElementById('uploadArea');
