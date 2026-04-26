@@ -23,7 +23,6 @@ python app.py
 The app will run on following local addresses:
 ```bash
 http://127.0.0.1:5000
-http://192.168.1.94:5000
 ```
 
 ## Development Credits:
